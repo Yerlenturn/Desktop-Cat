@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/color.css" rel="stylesheet" type="text/css" />
+    <!-- local jquery -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="helperFunc.js" defer></script>
+    <script src="tasks.js" defer></script>
+    <script src="setUp.js" defer></script>
+    <title>desktop cat</title>
+</head>
+<body>
+    <img id="backdrop" />
+
+    <h1>TASK SHEET</h1>
+
+    <nav id="menu">
+        <div id="toggleTheme" class="button">toggle theme</div>
+        <div id="toggleFinishedTasks" class="button">hide finished tasks</div>
+        <div id="toggleLateTasks" class="button">hide late tasks</div>
+        <div id="clearCache" class="button">clear all tasks</div>
+    </nav>
+
+    <div class="columnWrapper">
+    <form id="taskColumn">
+        <div class="taskWrapper newTask">
+            <input id="newCheckbox" class="checkbox input" type="checkbox" />
+            <textarea id="newTask" class="task input" name="task" placeholder="new task" required></textarea>
+            <input id="newDate" class="date input" type="date" required />
+            <div class="sideButton" id="saveTask">☑</div>
+        </div>
+        <p class="warning" id="taskWarning">task description is required!</p>
+        <p class="warning" id="dateWarning">date is required!</p>
+        <div id="reminder" class="taskWrapper">
+            <p>reminder from your cat: </p>
+            <textarea id="reminderText" class="input task"></textarea>
+        </div>
+        <br />
+    </form>
+    </div>
+</body>
+</html>

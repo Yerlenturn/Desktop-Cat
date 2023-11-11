@@ -1,0 +1,77 @@
+/* themes */
+
+body.red {
+    --color1: #5D2A42;
+    --color2: #FB6376;
+    --color3: #FCB1A6;
+    --color4: #FFDCCC;
+    --color5: #FFF9EC;
+}
+
+body.winter {
+    --color1: #50514F;
+    --color2: #247BA0;
+    --color3: #CBD4C2;
+    --color4: #C3B299;
+    --color5: #FFFCFF;
+}
+
+body.summer {
+    --color1: #386657;
+    --color2: #BC4B51;
+    --color3: #8CB369;
+    --color4: #F4A259;
+    --color5: #F4E285;
+}
+
+body.night {
+    --color1: #293132;
+    --color2: #474044;
+    --color3: #4F5165;
+    --color4: #547AA5;
+    --color5: #84A7B0;
+}
+
+/* main */
+
+body {
+    background-color: var(--color4);
+    color: var(--color1);
+    transition-duration: 0.5s;
+}
+
+/* menu bar */
+
+.button {
+    border: var(--color4) solid 1px;
+}
+
+.button:hover {
+    border: var(--color3) solid 1px;
+    border-radius: 5px;
+}
+
+/* tasks */
+
+.taskWrapper {
+    background-color: var(--color3);
+}
+
+.input {
+    color: var(--color1);
+    background-color: var(--color5);
+}
+
+.late {
+    background-color: var(--color2);
+}
+
+.done {
+    /* faded version */
+    background-color: var(--color4);
+}
+
+.done .input,.done div {
+    color: var(--color3);
+    background-color: var(--color4);
+}
